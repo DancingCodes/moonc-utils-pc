@@ -1,13 +1,49 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moonc - Music - Utils - Pc</title>
+  <style>
+    .moonc-loading {
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 70px;
+      background: linear-gradient(to right, #00F260, #0575E6, #FF416C, #FF4B2B);
+      background-size: 200% 100%;
+      background-position-x: 0;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: animate-gradient 1s linear infinite alternate;
+    }
+
+    @keyframes animate-gradient {
+      0% {
+        background-position-x: 0;
+      }
+
+      100% {
+        background-position-x: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div class="moonc-loading">Moonc - Music - Utils - Pc</div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
